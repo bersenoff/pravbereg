@@ -1,0 +1,36 @@
+#toolbar {
+  background: rgb(55, 53, 58);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  text-align: center;
+  /* position: fixed;
+  top: 0; */
+  text-shadow: 0 0 1px #000;
+  min-width: 1024px;
+  width: 100%;
+}
+
+#toolbar-info {
+  float: left;
+}
+
+#toolbar-social {
+  float: right;
+}
+
+#toolbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#toolbar ul li {
+  display: inline;
+  margin: 0 1rem;
+  padding: 0;
+}
+
+#toolbar a {
+  color: #fff;
+}

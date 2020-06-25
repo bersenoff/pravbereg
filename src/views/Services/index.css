@@ -1,0 +1,37 @@
+#section-services {
+  background: url('/images/femida.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-block {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  color: rgb(118, 42, 44);
+  height: 15rem;
+  display: flex;
+  width: 20%;
+  margin: 1rem;
+}
+
+.service-block-content {
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.service-block-btn {
+  margin-top: 2rem;
+}
