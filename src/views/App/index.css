@@ -1,0 +1,52 @@
+body {
+  color: #555;
+  font-size: 18px;
+  font-family: Tahoma;
+  font-weight: 500;
+  margin: 0;
+}
+
+@font-face {
+  font-family: v_ALoveOfThunder;
+  src: url('/fonts/v_ALoveOfThunder.ttf');
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #555;
+}
+
+.section {
+  width: 100%;
+}
+
+.section-content {
+  margin: 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  min-width: 1024px;
+  width: 90%;
+}
+
+.primary-btn {
+  background: rgb(118, 42, 44);
+  border-color: rgb(100, 42, 44);
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background: rgb(150, 42, 44);
+  border-color: rgb(120, 42, 44);
+}
+
+.primary-btn:focus {
+  background: rgb(150, 42, 44);
+  border-color: rgb(120, 42, 44);
+}
