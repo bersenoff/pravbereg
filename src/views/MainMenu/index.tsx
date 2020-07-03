@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "antd";
 import WaterWave from "react-water-wave";
+import { FeedbackForm } from "../../components";
 import "./index.css";
 
+interface IState {
+  visible: {
+    feedback: boolean;
+  }
+}
+
 const Component: React.FunctionComponent = () => {
+  const [state, setState] = useState<IState>({
+    visible: {
+      feedback: false
+    }
+  });
+
+  const { visible } = state;
+
+  const handleFormVisible = () => {
+    setState((s) => ({
+      ...s,
+      visible: {
+        ...s.visible,
+        feedback: !s.visible.feedback
+      }
+    }));
+  }
+
   return (
+    <>
+    <FeedbackForm visible={visible.feedback} fnVisible={handleFormVisible} />
     <WaterWave dropRadius={30} style={{ background: "url('/images/water.jpg')", backgroundSize: "cover", height: "100vh", minHeight: "768px" }}>
       {(methods: any) => (
         <>
@@ -18,7 +45,6 @@ const Component: React.FunctionComponent = () => {
             <div id="main-menu">
               <ul>
                 <li><a href="#"><i className="fas fa-home"></i> ГЛАВНАЯ</a></li>
-                <li><a href="#"><i className="fas fa-newspaper"></i> БЛОГ</a></li>
                 <li><a href="#"><i className="fas fa-comments"></i> ОТЗЫВЫ</a></li>
                 <li><a href="#"><i className="fas fa-info-circle"></i> О НАС</a></li>
               </ul>
@@ -32,7 +58,7 @@ const Component: React.FunctionComponent = () => {
               <div id="promo-info">
                 <div id="promo-title">Поиск справедливости<br />—<br />наш главный мотив в работе!</div>
                 <div id="promo-btn-block">
-                  <Button type="primary" id="promo-btn" className="primary-btn" size="large">Бесплатная консультация</Button>
+                  <Button type="primary" id="promo-btn" className="primary-btn" size="large" onClick={handleFormVisible}>Бесплатная консультация</Button>
                 </div>
               </div>
             </div>
@@ -41,6 +67,7 @@ const Component: React.FunctionComponent = () => {
         </>
       )}
     </WaterWave>
+    </>
   )
 }
 
