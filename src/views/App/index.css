@@ -35,6 +35,16 @@ a:visited {
   width: 90%;
 }
 
+.breadcrump {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.breadcrump .breadcrump-link:last-child {
+  color: #777;
+}
+
 .primary-btn {
   background: rgb(118, 42, 44);
   border-color: rgb(100, 42, 44);

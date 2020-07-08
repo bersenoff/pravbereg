@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 import WaterWave from "react-water-wave";
-import { FeedbackForm } from "../../components";
+import { FeedbackForm, MainMenu } from "../../../components";
 import "./index.css";
 
 interface IState {
@@ -32,26 +33,10 @@ const Component: React.FunctionComponent = () => {
   return (
     <>
     <FeedbackForm visible={visible.feedback} fnVisible={handleFormVisible} />
-    <WaterWave dropRadius={30} style={{ background: "url('/images/water.jpg')", backgroundSize: "cover", height: "100vh", minHeight: "768px" }}>
+    <WaterWave dropRadius={30} style={{ background: "url('/images/bg/water.jpg')", backgroundSize: "cover", height: "100vh", minHeight: "768px" }}>
       {(methods: any) => (
         <>
-        <div className="section">
-          <div className="section-content">
-            <div id="logo">
-              <div id="logo-img">
-                <a href="/"><img src="/images/logo-white.png" style={{ height: "100px" }} /></a>
-              </div>
-            </div>
-            <div id="main-menu">
-              <ul>
-                <li><a href="#"><i className="fas fa-home"></i> ГЛАВНАЯ</a></li>
-                <li><a href="#"><i className="fas fa-comments"></i> ОТЗЫВЫ</a></li>
-                <li><a href="#"><i className="fas fa-info-circle"></i> О НАС</a></li>
-              </ul>
-            </div>
-            <div style={{ clear: "both" }}></div>
-          </div>
-        </div>
+        <MainMenu />
         <div className="section">
           <div className="section-content" style={{ paddingBottom: "1rem" }}>
             <div id="promo">

@@ -1,19 +1,26 @@
 import React from "react";
-import { Toolbar, MainMenu, Services, Footer } from "../";
+import { Router, Route, Switch, withRouter } from "react-router-dom";
+import { Toolbar, Footer } from "../";
+import { MainPage, AboutUs } from "../../pages";
+import { BrowserHistory } from "history";
 import "antd/dist/antd.css";
 import "./index.css";
 
-const Component: React.FunctionComponent = () => {
+interface IProps {
+  history: BrowserHistory<object>
+}
+
+const Component: React.FunctionComponent<IProps> = ({ history }) => {
   return (
-    <>
-      <Toolbar />
-      <div id="wrapper">
-        <MainMenu />
-        <Services />
+      <>
+        <Toolbar />
+        <Switch>
+          <Route history={history} exact path="/about-us" component={AboutUs} />
+          <Route history={history} path="/" component={MainPage} />
+        </Switch>
         <Footer />
-      </div>
-    </>
+      </>
   )
 }
 
-export default Component;
+export default withRouter(Component);
