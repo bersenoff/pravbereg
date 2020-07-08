@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "antd";
-import { FeedbackForm } from "../../components";
+import { FeedbackForm } from "../../../components";
 import "./index.css";
 
 interface IState {

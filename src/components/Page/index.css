@@ -1,0 +1,20 @@
+.page {
+  background: url('/images/bg/sea.jpg');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.page-content {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  padding: 1rem;
+  line-height: 2.25rem;
+}
+
+.page-content p {
+  margin: 0;
+  text-align: justify;
+  text-indent: 2rem;
+}
