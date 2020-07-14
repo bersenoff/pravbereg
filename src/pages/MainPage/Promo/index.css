@@ -1,6 +1,7 @@
 #promo {
   background-image: url('/images/promo.jpg');
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: 0 0 5px #ccc;
   padding-top: 38.08%;
   position: relative;
@@ -10,7 +11,7 @@
   color: rgb(118, 42, 44);
   position: absolute;
   top: calc(50% - 6rem);
-  right: 15%;
+  right: 5%;
 }
 
 #promo-title {
