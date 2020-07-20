@@ -41,7 +41,7 @@ const Component: React.FunctionComponent<IProps> = ({ visible, fnVisible }) => {
 
     axios({
       method: "POST",
-      url: "http://prabereg.ru/bot/message/request/send",
+      url: "https://prabereg.ru/bot/message/request/send",
       data: values
     }).then(() => {
       setState((s) => ({
