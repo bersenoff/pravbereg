@@ -12,7 +12,7 @@ const Component: React.FunctionComponent = () => {
       <div className="section-content">
         <div id="logo">
           <div id="logo-img">
-            <Link to="/"><img src="/images/logo-white.png" style={{ height: "100px" }} /></Link>
+            <Link to="/"><img src="/images/logo-white.png" /></Link>
           </div>
         </div>
         <div id="main-menu">
@@ -23,6 +23,13 @@ const Component: React.FunctionComponent = () => {
           </ul>
         </div>
         <div style={{ clear: "both" }}></div>
+        <div id="mobile-contacts">
+          <ul>
+            <li><i className="fas fa-map-marker"></i> &nbsp; г. Иркутск, ул. Терешковой 15 "Б", 4 этаж</li>
+            <li><i className="fas fa-phone"></i> &nbsp; +7 (3952) 722-401</li>
+            <li><i className="fas fa-envelope"></i> &nbsp; <a href="mailto:prabereg@yandex.ru">prabereg@yandex.ru</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   );

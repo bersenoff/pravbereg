@@ -1,3 +1,26 @@
+@media all and (max-width: 1023px) {
+  #services-title {
+    width: 100%;
+  }
+
+  .service-block {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .service-block:first-child {
+    margin-top: 0;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .service-block {
+    margin: 1rem;
+    max-width: calc(25% - 2rem);
+    width: auto;
+  }
+}
+
 #section-services {
   background: url('/images/bg/femida.jpg');
   background-attachment: fixed;
@@ -36,8 +59,6 @@
   color: rgb(118, 42, 44);
   height: 20rem;
   display: flex;
-  width: 20%;
-  margin: 1rem;
   position: relative;
 }
 

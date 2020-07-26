@@ -8,8 +8,8 @@ import "./index.css";
 
 const Component: React.FunctionComponent =  () => {
   return (
-    <div id="toolbar">
-      <div className="section-content" style={{ paddingTop: 0 }}>
+    <div className="toolbar header">
+      <div className="section-content header-desktop">
         <div id="toolbar-info">
           <ul>
             <li><i className="fas fa-map-marker"></i> г. Иркутск, ул. Терешковой 15 "Б", 4 этаж</li>
@@ -27,6 +27,7 @@ const Component: React.FunctionComponent =  () => {
         </div>
         <div style={{ clear: "both" }}></div>
       </div>
+      <div className="section-content header-mobile"><i className="fas fa-bars"></i></div>
     </div>
   )
 }
