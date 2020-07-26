@@ -1,3 +1,9 @@
+@media all and (max-width: 1023px) {
+  .promo-section {
+    display: none;
+  }
+}
+
 #promo {
   background-image: url('/images/promo.jpg');
   background-size: cover;

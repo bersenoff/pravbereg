@@ -14,11 +14,13 @@ const Component: React.FunctionComponent<IProps> = ({ history }) => {
   return (
       <>
         <Toolbar />
-        <Switch>
-          <Route history={history} exact path="/about-us" component={AboutUs} />
-          <Route history={history} path="/" component={MainPage} />
-        </Switch>
-        <Footer />
+        <div className="wrapper">
+          <Switch>
+            <Route history={history} exact path="/about-us" component={AboutUs} />
+            <Route history={history} path="/" component={MainPage} />
+          </Switch>
+          <Footer />
+        </div>
       </>
   )
 }

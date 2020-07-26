@@ -33,22 +33,22 @@ const Component: React.FunctionComponent = () => {
   return (
     <>
     <FeedbackForm visible={visible.feedback} fnVisible={handleFormVisible} />
-    <WaterWave dropRadius={30} style={{ background: "url('/images/bg/water.jpg')", backgroundSize: "cover", height: "100vh", minHeight: "768px" }}>
+    <WaterWave dropRadius={30} className="water-wave" style={{ background: "url('/images/bg/water.jpg')", backgroundSize: "cover", height: "calc(100vh - 3rem)" }}>
       {(methods: any) => (
-        <>
-        <MainMenu />
-        <div className="section">
-          <div className="section-content" style={{ paddingBottom: "1rem" }}>
-            <div id="promo">
-              <div id="promo-info">
-                <div id="promo-title">Поиск справедливости<br />—<br />наш главный мотив в работе!</div>
-                <div id="promo-btn-block">
-                  <Button type="primary" id="promo-btn" className="primary-btn" size="large" onClick={handleFormVisible}>Бесплатная консультация</Button>
+          <>
+          <MainMenu />
+          <div className="section promo-section">
+            <div className="section-content" style={{ paddingBottom: "1rem" }}>
+              <div id="promo">
+                <div id="promo-info">
+                  <div id="promo-title">Поиск справедливости<br />—<br />наш главный мотив в работе!</div>
+                  <div id="promo-btn-block">
+                    <Button type="primary" id="promo-btn" className="primary-btn" size="large" onClick={handleFormVisible}>Бесплатная консультация</Button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </>
       )}
     </WaterWave>
