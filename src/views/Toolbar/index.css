@@ -1,3 +1,6 @@
+/** 
+  Mobile
+**/
 @media all and (max-width: 1023px) {
   .header {
     position: fixed;
@@ -10,14 +13,62 @@
   }
 
   .header-mobile {
-    display: block;
+    display: flex;
     text-align: left;
+  }
+
+  .header-mobile-menu {
+    width: 20%;
+  }
+
+  .header-mobile-social {
+    text-align: right;
+    width: 80%;
+  }
+
+  .toolbar-menu li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .mobile-main-menu {
+    background: #fff;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    position: absolute;
+    top: 2.4rem;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+    width: 70%;
+    z-index: 9999;
+  }
+
+  .mobile-main-menu li a {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    padding: 1rem 0;
+  }
+
+  .mobile-main-menu li:last-child a {
+    border-bottom: none;
+  }
+
+  .mobile-main-menu li a:hover {
+    text-decoration: none;
   }
 }
 
+/**
+  Desktop
+**/
 @media all and (min-width: 1024px) {
   .header-mobile {
     display: none;
+  }
+
+  .toolbar-menu li a {
+    padding: 1rem;
   }
 }
 
@@ -25,7 +76,6 @@
   background: #37353a;
   color: #fff;
   font-size: 0.9rem;
-  padding: 1rem;
   text-align: center;
   text-shadow: 0 0 1px #000;
   width: 100%;
@@ -35,26 +85,47 @@
   padding: 0;
 }
 
-#toolbar-info {
+.toolbar-info {
   float: left;
 }
 
-#toolbar-social {
-  float: right;
-}
-
-.toolbar ul {
+.toolbar-info ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.toolbar ul li {
-  display: inline;
-  margin: 0 1rem;
+.toolbar-info ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.toolbar-info ul li a {
+  color: #fff;
+}
+
+.toolbar-social {
+  float: right;
+}
+
+.toolbar-menu {
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
-.toolbar a {
+.toolbar-menu li {
+  display: inline-block;
+}
+
+.toolbar-menu li a {
   color: #fff;
+  display: block;
+}
+
+.toolbar-menu li a:hover {
+  background: #fff;
+  color: #000;
+  transition: all 0.5s;
+  text-decoration: none;
 }

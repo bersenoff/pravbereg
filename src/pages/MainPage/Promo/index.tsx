@@ -37,6 +37,17 @@ const Component: React.FunctionComponent = () => {
       {(methods: any) => (
           <>
           <MainMenu />
+          <div className="section">
+            <div className="section-content">
+              <div id="mobile-contacts">
+                <ul>
+                  <li><i className="fas fa-map-marker"></i> &nbsp; г. Иркутск, ул. Терешковой 15 "Б", 4 этаж</li>
+                  <li><i className="fas fa-phone"></i> &nbsp; +7 (3952) 722-401</li>
+                  <li><i className="fas fa-envelope"></i> &nbsp; <a href="mailto:prabereg@yandex.ru">prabereg@yandex.ru</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div className="section promo-section">
             <div className="section-content" style={{ paddingBottom: "1rem" }}>
               <div id="promo">
