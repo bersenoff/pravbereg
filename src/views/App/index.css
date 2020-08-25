@@ -1,4 +1,6 @@
 body {
+  /* background: hsl(207,50%,90%); */
+  background-image: url('/images/bg/bg.jpg');
   color: #555;
   font-size: 18px;
   font-family: Tahoma;
@@ -14,6 +16,10 @@ body {
 @media all and (max-width: 1023px) {
   .wrapper {
     padding-top: 2rem;
+  }
+
+  .title-block {
+    width: 100%;
   }
 }
 
@@ -42,7 +48,7 @@ a:visited {
 
 .section-content {
   margin: 0 auto;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
 .breadcrump {
@@ -69,4 +75,17 @@ a:visited {
 .primary-btn:focus {
   background: rgb(150, 42, 44);
   border-color: rgb(120, 42, 44);
+}
+
+.title-block {
+  background: hsl(0,0%,100%);
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem -0.3rem hsla(0,0%,0%,0.2);
+  display: inline-block;
+  padding: 1rem;
+  font-family: v_ALoveOfThunder;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: rgb(118, 42, 44);
+  text-align: center;
 }

@@ -33,7 +33,7 @@ const Component: React.FunctionComponent = () => {
     <FeedbackForm visible={visible.feedback} fnVisible={handleFormVisible} />
     <div id="section-services" className="section">
       <div className="section-content" style={{ paddingBottom: "1rem" }}>
-        <div style={{ textAlign: "center" }}><div id="services-title">НАШИ УСЛУГИ</div></div>
+        <div style={{ textAlign: "center" }}><div className="title-block"><i className="fas fa-tasks"></i> &nbsp; НАШИ УСЛУГИ</div></div>
         <div id="services-list">
           <div className="service-block">
             <div className="service-block-content">

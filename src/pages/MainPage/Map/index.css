@@ -1,0 +1,16 @@
+@media all and (max-width: 1023px) {
+  .map-iframe {
+    height: 50vh;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .map-iframe {
+    height: 75vh;
+  }
+}
+
+.map-iframe {
+  position: relative;
+  width: 100%;
+}
