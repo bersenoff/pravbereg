@@ -33,7 +33,7 @@ const Component: React.FunctionComponent = () => {
   return (
     <>
     <FeedbackForm visible={visible.feedback} fnVisible={handleFormVisible} />
-    <WaterWave dropRadius={30} className="water-wave" style={{ background: "url('/images/bg/water.jpg')", backgroundSize: "cover", height: "calc(100vh - 3rem)" }}>
+    <WaterWave dropRadius={30} className="water-wave" style={{ background: "url('/images/bg/water.jpg')", backgroundSize: "cover", minHeight: "calc(100vh)", boxShadow: "0 15px 30px #555" }}>
       {(methods: any) => (
           <>
           <MainMenu />
