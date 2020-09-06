@@ -85,7 +85,7 @@ module.exports = function(webpackEnv) {
     mode: isEnvProduction ? "production" : isEnvDevelopment && "development",
     bail: isEnvProduction,
     devtool: isEnvProduction ? (shouldUseSourceMap ? "source-map" : false) : isEnvDevelopment && "cheap-module-source-map",
-    entry: [isEnvDevelopment && require.resolve("react-dev-utils/webpackHotDevClient"), "@babel/polyfill", paths.appIndexJs].filter(Boolean),
+    entry: [isEnvDevelopment && require.resolve("react-dev-utils/webpackHotDevClient"), paths.appIndexJs].filter(Boolean),
     output: {
       path: isEnvProduction ? paths.appBuild : undefined,
       pathinfo: isEnvDevelopment,
