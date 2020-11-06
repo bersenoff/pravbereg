@@ -14,3 +14,12 @@
   position: relative;
   width: 100%;
 }
+
+.block-contacts ul {
+  list-style: none;
+  margin: 0;
+}
+
+.block-contacts ul li {
+  padding: 0.5rem 0;
+}

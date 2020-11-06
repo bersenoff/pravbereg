@@ -1,100 +1,20 @@
 @media all and (max-width: 1023px) {
-  #logo {
-    margin: 0 auto;
-  }
-
   #logo-img img {
     width: 100%;
-  }
-
-  #main-menu {
-    display: none;
-  }
-
-  #mobile-contacts {
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  #mobile-contacts ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  #mobile-contacts ul li {
-    margin-top: 2rem;
-    color: #fff;
-  }
-
-  #mobile-contacts ul li:first-child {
-    margin-top: 0;
-  }
-
-  #mobile-contacts ul li a {
-    color: #fff;
   }
 }
 
 @media all and (min-width: 1024px) {
-  #logo {
-    float: left;
-  }
-
   #logo-img img {
-    height: 100px;
+    height: 125px;
   }
+}
 
-  #mobile-contacts {
-    display: none;
-  }
+#logo {
+  display: inline-block;
+  margin: 0 auto;
 }
 
 #logo-img {
   padding-top: 1rem;
-}
-
-#main-menu {
-  margin-left: calc(315px + 1rem);
-  line-height: calc(100px + 2rem);
-  text-align: right;
-}
-
-#main-menu ul {
-  background: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px #ccc;
-  display: inline;
-  list-style: none;
-  margin: 0;
-  padding: 1rem 0;
-}
-
-#main-menu ul li {
-  display: inline;
-}
-
-#main-menu ul li:first-child {
-  margin-left: 0;
-}
-
-#main-menu ul li:last-child {
-  margin-right: 0;
-}
-
-.main-menu-a {
-  border-right: 1px solid #ccc;
-  padding: 1rem;
-}
-
-#main-menu ul li:last-child .main-menu-a {
-  border-right: none;
-}
-
-.main-menu-a:hover {
-  background: rgb(118, 42, 44);
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 0 0 1px #000;
-  transition: 0.5s;
 }
