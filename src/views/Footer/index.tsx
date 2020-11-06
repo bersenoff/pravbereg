@@ -1,8 +1,9 @@
 import React from "react";
+import "./index.css";
 
 const Component: React.FunctionComponent = () => {
   return (
-      <div className="toolbar" style={{ padding: "1rem" }}>ООО "Юридическая компания Правый Берег" © 2020. Все права защищены.</div>
+      <div className="footer">ООО "Юридическая компания Правый Берег" © 2020. Все права защищены.</div>
   );
 }
 

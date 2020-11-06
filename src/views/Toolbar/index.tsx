@@ -58,10 +58,11 @@ const Component: React.FunctionComponent =  () => {
     <div className="toolbar header">
       <div className="section-content header-desktop">
         <div className="toolbar-info">
-          <ul>
-            <li><i className="fas fa-map-marker"></i> г. Иркутск, ул. Терешковой 15 "Б", 4 этаж</li>
-            <li><i className="fas fa-phone"></i> +7 (3952) 722-401</li>
-            <li><i className="fas fa-envelope"></i> <a href="mailto:prabereg@yandex.ru">prabereg@yandex.ru</a></li>
+          <ul className="toolbar-menu">
+            <li><a href="/"><i className="fas fa-home"></i> ГЛАВНАЯ</a></li>
+            <li><a href="/#advantages"><i className="fas fa-rocket"></i> ПРЕИМУЩЕСТВА</a></li>
+            <li><a href="/#services"><i className="fas fa-tasks"></i> УСЛУГИ</a></li>
+            <li><a href="#contacts"><i className="fas fa-address-book"></i> КОНТАКТЫ</a></li>
           </ul>
         </div>
         <div className="toolbar-social">

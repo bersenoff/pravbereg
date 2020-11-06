@@ -4,15 +4,15 @@
 
 import React from "react";
 import Promo from "./Promo";
+import Advantages from "./Advantages";
 import Services from "./Services";
-import Map from "./Map";
 
 const Component: React.FunctionComponent = () => {
   return (
     <>
       <Promo />
+      <Advantages />
       <Services />
-      <Map />
     </>
   );
 }

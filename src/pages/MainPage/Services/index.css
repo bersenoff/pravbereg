@@ -1,62 +1,74 @@
-@media all and (max-width: 1023px) {
-  #services-title {
-    width: 100%;
-  }
-
-  .service-block {
-    margin-top: 1rem;
-    width: 100%;
-  }
-
-  .service-block:first-child {
-    margin-top: 0;
-  }
+.block-mediation {
+  background-image: url('/images/services/mediation.png');
 }
 
-@media all and (min-width: 1024px) {
-  .service-block {
-    margin: 1rem;
-    max-width: calc(25% - 2rem);
-    width: auto;
-  }
+.block-agreement {
+  background-image: url('/images/services/agreement.png');
 }
 
-#section-services {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: auto;
+.block-court {
+  background-image: url('/images/services/court.png');
 }
 
-#services-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
+.block-bailiff {
+  background-image: url('/images/services/bailiff.png');
 }
 
-.service-block {
-  background: hsl(0,0%,100%);
-  border-radius: 5px;
-  box-shadow: 0 0.5rem 1rem -0.3rem hsla(0,0%,0%,0.2);
-  font-weight: bold;
-  color: rgb(118, 42, 44);
-  height: 20rem;
-  display: flex;
-  position: relative;
+.block-work {
+  background-image: url('/images/services/work.png');
 }
 
-.service-block-content {
-  padding: 1rem;
-  margin: auto;
-  text-align: center;
-  width: 100%;
+.block-family {
+  background-image: url('/images/services/family.png');
 }
 
-.service-block-btn {
-  position: absolute;
-  left: 0;
-  bottom: 1rem;
-  text-align: center;
-  width: 100%;
+.block-immovables {
+  background-image: url('/images/services/immovables.png');
+}
+
+.block-legacy {
+  background-image: url('/images/services/legacy.png');
+}
+
+.block-business {
+  background-image: url('/images/services/business.png');
+}
+
+.block-debts {
+  background-image: url('/images/services/debts.png');
+}
+
+.block-taxes {
+  background-image: url('/images/services/taxes.png');
+}
+
+.block-bankruptcy {
+  background-image: url('/images/services/bankruptcy.png');
+}
+
+.block-crp {
+  background-image: url('/images/services/crp.png');
+}
+
+.block-hd {
+  background-image: url('/images/services/hd.png');
+}
+
+.block-ra {
+  background-image: url('/images/services/ra.png');
+}
+
+.block-lawyer {
+  background-image: url('/images/services/lawyer.png');
+}
+
+.service-info .block-text {
+  border-bottom: 2px solid rgb(118, 42, 44);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.service-info .block-img {
+  margin-bottom: 1rem;
 }
