@@ -3,34 +3,13 @@ import { FeedbackForm } from "../../../components";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-interface IState {
-  visible: {
-    feedback: boolean;
-  }
-}
+interface IProps {}
 
-const Component: React.FunctionComponent = () => {
-  const [state, setState] = useState<IState>({
-    visible: {
-      feedback: false
-    }
-  });
+interface IState {}
 
-  const { visible } = state;
-
-  const handleFormVisible = () => {
-    setState((s) => ({
-      ...s,
-      visible: {
-        ...s.visible,
-        feedback: !s.visible.feedback
-      }
-    }));
-  }
-
+const Component: React.FunctionComponent<IProps> = () => {
   return (
     <>
-    <FeedbackForm visible={visible.feedback} fnVisible={handleFormVisible} />
     <div className="section" id="services">
       <div className="section-content" style={{ paddingBottom: "1rem" }}>
         <div style={{ textAlign: "center" }}><div className="title-block"><i className="fas fa-tasks"></i> &nbsp; УСЛУГИ</div></div>

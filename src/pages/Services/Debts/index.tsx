@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { FeedbackForm } from "../../../components";
 
 const Component: React.FunctionComponent = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Component: React.FunctionComponent = () => {
             <li>преставление интересов в суде по спорам о взыскании задолженности;</li>
             <li>споры с кредитными организациями;</li>
           </ul>
+          <div style={{ textAlign: "center" }}><FeedbackForm defaultCategory="Взыскание долгов" /></div>
         </div>
       </div>
     </div>
