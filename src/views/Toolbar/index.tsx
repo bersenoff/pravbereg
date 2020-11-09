@@ -82,8 +82,10 @@ const Component: React.FunctionComponent =  () => {
           </ul>
 
           <ul className="mobile-main-menu" onClick={toggleMenu} style={{ visibility: (visible.main_menu) ? "visible" : "hidden" }}>
-            <li><Link to="/"><i className="fas fa-home"></i> ГЛАВНАЯ</Link></li>
-            <li><Link to="/about-us"><i className="fas fa-info-circle"></i> О НАС</Link></li>
+            <li><a href="/"><i className="fas fa-home"></i> ГЛАВНАЯ</a></li>
+            <li><a href="/#advantages"><i className="fas fa-rocket"></i> ПРЕИМУЩЕСТВА</a></li>
+            <li><a href="/#services"><i className="fas fa-tasks"></i> УСЛУГИ</a></li>
+            <li><a href="#contacts"><i className="fas fa-address-book"></i> КОНТАКТЫ</a></li>
           </ul>
         </div>
         <div className="header-mobile-social">

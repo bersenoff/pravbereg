@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { Modal, Button, Form, Input, message } from "antd";
+import { Modal, Button, Form, Input, message, Select } from "antd";
 import { Store } from "antd/lib/form/interface";
 import axios from "axios";
+import "./index.css";
 
 interface IProps {
-  visible: boolean;
-  fnVisible: () => void;
+  defaultCategory?: string
 }
 
 interface IState {
+  visible: boolean,
   loading: {
     sending: boolean;
   }
@@ -19,16 +20,24 @@ const layout = {
   wrapperCol: { span: 24 },
 };
 
-const Component: React.FunctionComponent<IProps> = ({ visible, fnVisible }) => {
+const Component: React.FunctionComponent<IProps> = ({ defaultCategory }) => {
   const [form] = Form.useForm();
 
   const [state, setState] = useState<IState>({
+    visible: false,
     loading: {
       sending: false
     }
   });
 
-  const { loading } = state;
+  const { visible, loading } = state;
+
+  const handleVisible = () => {
+    setState((s) => ({
+      ...s,
+      visible: (visible) ? false : true
+    }));
+  }
 
   const onFinish = (values: Store) => {
     setState((s) => ({
@@ -46,6 +55,7 @@ const Component: React.FunctionComponent<IProps> = ({ visible, fnVisible }) => {
     }).then(() => {
       setState((s) => ({
         ...s,
+        visible: false,
         loading: {
           ...s.loading,
           sending: false
@@ -55,7 +65,6 @@ const Component: React.FunctionComponent<IProps> = ({ visible, fnVisible }) => {
       message.success("Мы получили Ваш запрос и свяжемся с Вами в ближайшее время!");
 
       form.resetFields();
-      fnVisible();
     }).catch((err) => {
       setState((s) => ({
         ...s,
@@ -64,33 +73,52 @@ const Component: React.FunctionComponent<IProps> = ({ visible, fnVisible }) => {
           sending: false
         }
       }));
-
-      console.log(err);
   
       message.error("Упс! Что-то пошло не так, но мы уже в курсе и работаем над устранением проблемы. Позвоните нам по телефону.");
     });
   }
 
-  const onFinishFailed = () => {
-
-  }
-
   return (
+    <>
     <Modal
       visible={visible}
       title="Запись на бесплатную консультацию"
-      onCancel={fnVisible}
+      onCancel={handleVisible}
       footer={null}
     >
       <Form
         {...layout}
         form={form}
         layout="vertical"
-        size="large"
+        size="middle"
         name="feedback"
         onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
       >
+        <Form.Item
+          label="Категория услуг"
+          name="category"
+          initialValue={defaultCategory}
+          rules={[{ required: true, message: "Пожалуйста, укажите категорию услуг!" }]}
+        >
+          <Select showSearch={true}>
+            <Select.Option value="Переговоры и медиация">Переговоры и медиация</Select.Option>
+            <Select.Option value="Подготовка договоров и составление исков">Подготовка договоров и составление исков</Select.Option>
+            <Select.Option value="Представительство в суде и в государственных органах">Представительство в суде и в государственных органах</Select.Option>
+            <Select.Option value="Исполнительное производство">Исполнительное производство</Select.Option>
+            <Select.Option value="Работа">Работа</Select.Option>
+            <Select.Option value="Семья">Семья</Select.Option>
+            <Select.Option value="Недвижимость">Недвижимость</Select.Option>
+            <Select.Option value="Наследство">Наследство</Select.Option>
+            <Select.Option value="Бизнес">Бизнес</Select.Option>
+            <Select.Option value="Взыскание долгов">Взыскание долгов</Select.Option>
+            <Select.Option value="Налоги">Налоги</Select.Option>
+            <Select.Option value="Банкротство">Банкротство</Select.Option>
+            <Select.Option value="Защита прав потребителей">Защита прав потребителей</Select.Option>
+            <Select.Option value="Жилищные споры">Жилищные споры</Select.Option>
+            <Select.Option value="Помощь при ДТП">Помощь при ДТП</Select.Option>
+            <Select.Option value="Услуги адвоката по уголовным делам">Услуги адвоката по уголовным делам</Select.Option>
+          </Select>
+        </Form.Item>
         <Form.Item
           label="Как Вас зовут?"
           name="name"
@@ -99,7 +127,7 @@ const Component: React.FunctionComponent<IProps> = ({ visible, fnVisible }) => {
           <Input />
         </Form.Item>
         <Form.Item
-          label="Номер телефона:"
+          label="Номер телефона"
           name="phone"
           rules={[{ required: true, message: "Пожалуйста, укажите номер!" }]}
         >
@@ -117,6 +145,8 @@ const Component: React.FunctionComponent<IProps> = ({ visible, fnVisible }) => {
         </Form.Item>
       </Form>
     </Modal>
+    <Button type="primary" className="primary-btn promo-btn" size="large" onClick={handleVisible}>Бесплатная консультация</Button>
+    </>
   );
 }
 
