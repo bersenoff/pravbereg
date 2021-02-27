@@ -2,11 +2,29 @@
   .map-iframe {
     height: 50vh;
   }
+
+  .block-contacts {
+    margin: 1rem 0 1rem 0;
+  }
 }
 
 @media all and (min-width: 1024px) {
   .map-iframe {
-    height: 75vh;
+    height: 50vh;
+  }
+
+  .block-contacts {
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    width: calc(50% - 1rem);
+  }
+
+  #contacts-irkutsk {
+    float: left;
+  }
+
+  #contacts-peterburg {
+    float: right;
   }
 }
 
