@@ -3,7 +3,6 @@
  */
 
 import React from "react";
-import { MainMenu } from "../";
 import "./index.css";
 
 interface IProps {
@@ -13,7 +12,6 @@ interface IProps {
 const Component: React.FunctionComponent<IProps> = ({ children }) => {
   return (
   <div className="page">
-    <MainMenu />
     <div className="section">
       <div className="section-content">
         <div className="page-content">{ children }</div>
