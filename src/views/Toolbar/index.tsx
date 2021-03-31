@@ -63,6 +63,7 @@ const Component: React.FunctionComponent =  () => {
             <li><a href="/#advantages"><i className="fas fa-rocket"></i> ПРЕИМУЩЕСТВА</a></li>
             <li><a href="/#services"><i className="fas fa-tasks"></i> УСЛУГИ</a></li>
             <li><a href="#contacts"><i className="fas fa-address-book"></i> КОНТАКТЫ</a></li>
+            <li><a href=""><i className="fas fa-newspaper"></i> БЛОГ</a></li>
           </ul>
         </div>
         <div className="toolbar-social">
