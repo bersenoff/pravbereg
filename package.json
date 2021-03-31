@@ -51,6 +51,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-water-wave": "^1.0.5",
+    "react-yandex-maps": "^4.6.0",
     "style-loader": "^1.2.1",
     "terser-webpack-plugin": "1.1.0",
     "typescript": "^3.9.5",

@@ -1,0 +1,25 @@
+.yandex_map {
+  height: 50vh;
+  width: 100%;
+}
+
+.ymap_icon {
+  position: absolute;
+  bottom: 0;
+  background: rgb(118, 42, 44);
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  width: auto;
+}
+
+.ymap_icon:before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  border: 0.5rem solid transparent;
+  border-top-color: rgb(118, 42, 44);
+  border-left-color: rgb(118, 42, 44);
+}
