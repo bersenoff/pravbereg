@@ -11,7 +11,7 @@ const Component: React.FunctionComponent<IProps> = () => {
   return (
     <>
     <div className="section" id="services">
-      <div className="section-content" style={{ paddingBottom: "1rem" }}>
+      <div className="section-content">
         <div style={{ textAlign: "center" }}><div className="title-block"><i className="fas fa-tasks"></i> &nbsp; УСЛУГИ</div></div>
         <div className="block-list services-list">
           <div className="block-item block-item-service">

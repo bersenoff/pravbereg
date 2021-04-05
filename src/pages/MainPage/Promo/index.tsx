@@ -5,15 +5,8 @@ import "./index.css";
 const Component: React.FunctionComponent = () => {
   return (
     <>
-      {/* <div className="section">
-        <div className="section-content" style={{ textAlign: "center" }}>
-          <div id="logo">
-            <div id="logo-img"><img src="/images/logo.png" /></div>
-          </div>
-        </div>
-      </div> */}
       <div className="section promo-section">
-        <div className="section-content" style={{ paddingBottom: "1rem" }}>
+        <div className="section-content">
           <div id="promo">
             <div id="promo-info">
               <div id="logo">

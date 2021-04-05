@@ -62,8 +62,9 @@ const Component: React.FunctionComponent =  () => {
             <li><a href="/"><i className="fas fa-home"></i> ГЛАВНАЯ</a></li>
             <li><a href="/#advantages"><i className="fas fa-rocket"></i> ПРЕИМУЩЕСТВА</a></li>
             <li><a href="/#services"><i className="fas fa-tasks"></i> УСЛУГИ</a></li>
+            <li><a href="/#appeal"><i className="fas fa-comment"></i> ОБРАЩЕНИЕ УПР. ПАРТНЕРА</a></li>
+            <li><a href="/#team"><i className="fas fa-users"></i> КОМАНДА</a></li>
             <li><a href="#contacts"><i className="fas fa-address-book"></i> КОНТАКТЫ</a></li>
-            <li><a href=""><i className="fas fa-newspaper"></i> БЛОГ</a></li>
           </ul>
         </div>
         <div className="toolbar-social">
@@ -86,6 +87,8 @@ const Component: React.FunctionComponent =  () => {
             <li><a href="/"><i className="fas fa-home"></i> ГЛАВНАЯ</a></li>
             <li><a href="/#advantages"><i className="fas fa-rocket"></i> ПРЕИМУЩЕСТВА</a></li>
             <li><a href="/#services"><i className="fas fa-tasks"></i> УСЛУГИ</a></li>
+            <li><a href="/#appeal"><i className="fas fa-comment"></i> ОБРАЩЕНИЕ УПР. ПАРТНЕРА</a></li>
+            <li><a href="/#team"><i className="fas fa-users"></i> КОМАНДА</a></li>
             <li><a href="#contacts"><i className="fas fa-address-book"></i> КОНТАКТЫ</a></li>
           </ul>
         </div>
