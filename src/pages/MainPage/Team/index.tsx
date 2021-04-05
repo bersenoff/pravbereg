@@ -11,7 +11,7 @@ const Component: React.FunctionComponent = () => {
         <div className="command-list">
           <div className="block-item">
             <div className="command-info-fullname">Чуруксаев Николай Васильевич</div>
-            <div className="command-photo"><img src="/images/team/img8453.jpg" alt="" /></div>
+            <div className="command-photo"><img src="/images/team/img8353.jpg" alt="" /></div>
             <div className="command-info">
               <p>Генеральный директор.</p>
               <p>В 1980 г. окончил Высшую школу МВД СССР в г. Хабаровск.</p>
@@ -24,7 +24,7 @@ const Component: React.FunctionComponent = () => {
           </div>
           <div className="block-item">
             <div className="command-info-fullname">Власенко Радмила Николаевна</div>
-            <div className="command-photo"><img src="/images/team/img8454.jpg" alt="" /></div>
+            <div className="command-photo"><img src="/images/team/img8354.jpg" alt="" /></div>
             <div className="command-info">
                 <p>Управляющий партнер.</p>
                 <p>В 2003 г. окончила с отличием Юридический институт ИГУ.</p>
