@@ -1,12 +1,5 @@
-@media all and (max-width: 1023px) {
-  .block-contacts {
-    margin: 1rem 0 1rem 0;
-  }
-}
-
 @media all and (min-width: 1024px) {
   .block-contacts {
-    margin: 1rem 0 1rem 0;
     text-align: center;
     width: calc(50% - 1rem);
   }

@@ -6,7 +6,7 @@ html {
 
 @media all and (min-width: 1024px) and (max-width: 1151px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -70,7 +70,7 @@ p {
 
 .section-content {
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .breadcrump {
@@ -136,14 +136,13 @@ a.primary-btn:focus {
   padding: 1rem;
   font-family: v_ALoveOfThunder;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
   color: rgb(118, 42, 44);
   text-align: center;
 }
 
 .block-list {
   display: grid;
-  margin-top: 1rem;
 }
 
 .block-item {
@@ -210,7 +209,7 @@ a.primary-btn:focus {
   }
 
   .wrapper {
-    margin: 4rem 0 2rem 0;
+    margin: 5rem 0 2rem 0;
   }
 }
 
@@ -225,6 +224,6 @@ a.primary-btn:focus {
 
   .block-list {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2rem;
   }
 }

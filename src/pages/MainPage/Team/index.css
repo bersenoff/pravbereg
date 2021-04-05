@@ -1,0 +1,47 @@
+@media all and (max-width: 1023px) {
+  .command-list {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .command-photo {
+    margin-bottom: 1rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .command-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .command-photo {
+    float: left;
+    margin-right: 1rem;
+    width: 40%;
+  }  
+}
+
+.command-list {
+  display: grid;
+}
+
+.command-photo img {
+  width: 100%;
+}
+
+.command-info p {
+  margin-bottom: 0.5rem;
+}
+
+.command-info p:last-child {
+  margin-bottom: 0;
+}
+
+.command-info-fullname {
+  border-bottom: 2px solid rgb(118, 42, 44);
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
