@@ -7,7 +7,7 @@ import Promo from "./Promo";
 import Advantages from "./Advantages";
 import Services from "./Services";
 import Appeal from "./Appeal";
-import Team from "./Team";
+// import Team from "./Team";
 
 const Component: React.FunctionComponent = () => {
   return (
@@ -16,7 +16,7 @@ const Component: React.FunctionComponent = () => {
       <Advantages />
       <Services />
       <Appeal />
-      <Team />
+      {/* <Team /> */}
     </>
   );
 }
