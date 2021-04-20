@@ -1,40 +1,38 @@
 import React from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { Toolbar, Footer } from "../";
-import { MainPage, Services } from "../../pages";
+import { Blog, MainPage, Services } from "../../pages";
 import { Map } from "../";
-import { BrowserHistory } from "history";
 import "antd/dist/antd.css";
 import "./index.css";
 
-interface IProps {
-  history: BrowserHistory<object>
-}
-
-const Component: React.FunctionComponent<IProps> = ({ history }) => {
+const Component: React.FunctionComponent = () => {
   return (
       <>
         <Toolbar />
         <div className="wrapper">
           <Switch>
-            <Route history={history} exact={true} path="/" component={MainPage} />
+            <Route exact={true} path="/" component={MainPage} />
 
-            <Route history={history} exact={true} path="/uslugi/peregovory-i-mediaciya" component={Services.Mediation} />
-            <Route history={history} exact={true} path="/uslugi/podgotovka-dogovorov-i-sostavlenie-iskov" component={Services.Agreement} />
-            <Route history={history} exact={true} path="/uslugi/predstavitelstvo-v-sude-i-v-gosudarstvennyh-organah" component={Services.Court} />
-            <Route history={history} exact={true} path="/uslugi/ispolnitelnoe-proizvodstvo" component={Services.Bailiff} />
-            <Route history={history} exact={true} path="/uslugi/rabota" component={Services.Work} />
-            <Route history={history} exact={true} path="/uslugi/semiya" component={Services.Family} />
-            <Route history={history} exact={true} path="/uslugi/nedvizhimost" component={Services.Immovables} />
-            <Route history={history} exact={true} path="/uslugi/nasledstvo" component={Services.Legacy} />
-            <Route history={history} exact={true} path="/uslugi/biznes" component={Services.Business} />
-            <Route history={history} exact={true} path="/uslugi/vzyskanie-dolgov" component={Services.Debts} />
-            <Route history={history} exact={true} path="/uslugi/nalogi" component={Services.Taxes} />
-            <Route history={history} exact={true} path="/uslugi/bankrotstvo" component={Services.Bankruptcy} />
-            <Route history={history} exact={true} path="/uslugi/zashchita-prav-potrebitelej" component={Services.CRP} />
-            <Route history={history} exact={true} path="/uslugi/zhilishchnye-spory" component={Services.HD} />
-            <Route history={history} exact={true} path="/uslugi/pomoshch-pri-dtp" component={Services.RA} />
-            <Route history={history} exact={true} path="/uslugi/uslugi-advokata-po-ugolovnym-delam" component={Services.Lawyer} />
+            <Route exact={true} path="/uslugi/peregovory-i-mediaciya" component={Services.Mediation} />
+            <Route exact={true} path="/uslugi/podgotovka-dogovorov-i-sostavlenie-iskov" component={Services.Agreement} />
+            <Route exact={true} path="/uslugi/predstavitelstvo-v-sude-i-v-gosudarstvennyh-organah" component={Services.Court} />
+            <Route exact={true} path="/uslugi/ispolnitelnoe-proizvodstvo" component={Services.Bailiff} />
+            <Route exact={true} path="/uslugi/rabota" component={Services.Work} />
+            <Route exact={true} path="/uslugi/semiya" component={Services.Family} />
+            <Route exact={true} path="/uslugi/nedvizhimost" component={Services.Immovables} />
+            <Route exact={true} path="/uslugi/nasledstvo" component={Services.Legacy} />
+            <Route exact={true} path="/uslugi/biznes" component={Services.Business} />
+            <Route exact={true} path="/uslugi/vzyskanie-dolgov" component={Services.Debts} />
+            <Route exact={true} path="/uslugi/nalogi" component={Services.Taxes} />
+            <Route exact={true} path="/uslugi/bankrotstvo" component={Services.Bankruptcy} />
+            <Route exact={true} path="/uslugi/zashchita-prav-potrebitelej" component={Services.CRP} />
+            <Route exact={true} path="/uslugi/zhilishchnye-spory" component={Services.HD} />
+            <Route exact={true} path="/uslugi/pomoshch-pri-dtp" component={Services.RA} />
+            <Route exact={true} path="/uslugi/uslugi-advokata-po-ugolovnym-delam" component={Services.Lawyer} />
+
+            <Route exact={true} path="/blog" component={Blog.Main} />
+            <Route exact={true} path="/blog/create" component={Blog.Create} />
           </Switch>
           <Map />
           <Footer />
@@ -43,4 +41,4 @@ const Component: React.FunctionComponent<IProps> = ({ history }) => {
   )
 }
 
-export default withRouter(Component);
+export default Component;
