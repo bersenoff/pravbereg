@@ -23,7 +23,7 @@ const Component: React.FC = () => {
 
     axios({
       method: "POST",
-      url: "http://prabereg.ru/api/blog/create",
+      url: "https://prabereg.ru/api/blog/create",
       data: {
         title,
         short_content: shortContent,
