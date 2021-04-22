@@ -7,11 +7,13 @@ import "suneditor/dist/css/suneditor.min.css";
 
 const Component: React.FC = () => {
   const [title, setTitle] = useState(null);
+  const [shortContent, setShortContent] = useState(null);
   const [content, setContent] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const reset = () => {
     setTitle(null);
+    setShortContent(null);
     setContent(null);
     setLoading(false);
   }
@@ -21,13 +23,14 @@ const Component: React.FC = () => {
 
     axios({
       method: "POST",
-      url: "http://localhost:7000/blog/create",
+      url: "http://prabereg.ru/api/blog/create",
       data: {
         title,
-        body: content
+        short_content: shortContent,
+        content
       }
-    }).then(() => {
-      message.success("Статья успешно опубликована!");
+    }).then((res) => {
+      document.location.href = `/blog/post/${res.data.data.id}`;
       reset();
     }).catch((err) => {
       setLoading(false);
@@ -36,7 +39,7 @@ const Component: React.FC = () => {
   }
 
   // TODO: доработать, логика кривая
-  const allowSubmit = title && title.length > 0 && content && content.length > 0;
+  const allowSubmit = title && title.length > 0 && content && content.length > 0 && shortContent && shortContent.length > 0;
 
   return (
     <Section
@@ -51,6 +54,16 @@ const Component: React.FC = () => {
           onChange={(e) => setTitle(e.target.value)}
         />
       </div>
+      <div className="block-item" style={{ marginBottom: "1rem" }}>
+        <Input.TextArea 
+          value={shortContent}
+          onChange={(e) => setShortContent(e.target.value)}
+          placeholder="Краткое описание..."
+          rows={5}
+          size="large"
+          maxLength={1000}
+        />
+      </div>
       <div className="block-item">
         <SunEditor 
           lang="ru" 
@@ -59,6 +72,7 @@ const Component: React.FC = () => {
           setOptions={{
             buttonList: buttonList.complex
           }}
+          setDefaultStyle="font-family: inherit; font-size: 1rem; color: rgb(118, 42, 44)"
           width="100%"
           height="400"
         />

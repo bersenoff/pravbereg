@@ -65,6 +65,7 @@ const Component: React.FunctionComponent =  () => {
             <li><a href="/#appeal"><i className="fas fa-comment"></i> ОБРАЩЕНИЕ УПР. ПАРТНЕРА</a></li>
             {/* <li><a href="/#team"><i className="fas fa-users"></i> КОМАНДА</a></li> */}
             <li><a href="#contacts"><i className="fas fa-address-book"></i> КОНТАКТЫ</a></li>
+            <li><Link to="/blog"><i className="fas fa-newspaper"></i> БЛОГ</Link></li>
           </ul>
         </div>
         <div className="toolbar-social">
@@ -90,6 +91,7 @@ const Component: React.FunctionComponent =  () => {
             <li><a href="/#appeal"><i className="fas fa-comment"></i> ОБРАЩЕНИЕ УПР. ПАРТНЕРА</a></li>
             {/* <li><a href="/#team"><i className="fas fa-users"></i> КОМАНДА</a></li> */}
             <li><a href="#contacts"><i className="fas fa-address-book"></i> КОНТАКТЫ</a></li>
+            <li><Link to="/blog"><i className="fas fa-newspaper"></i> БЛОГ</Link></li>
           </ul>
         </div>
         <div className="header-mobile-social">
