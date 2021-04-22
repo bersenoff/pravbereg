@@ -33,6 +33,7 @@ const Component: React.FunctionComponent = () => {
 
             <Route exact={true} path="/blog" component={Blog.Main} />
             <Route exact={true} path="/blog/create" component={Blog.Create} />
+            <Route exact={true} path="/blog/post/:id" component={Blog.Post} />
           </Switch>
           <Map />
           <Footer />
