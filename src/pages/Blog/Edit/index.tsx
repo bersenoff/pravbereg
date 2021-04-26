@@ -48,7 +48,7 @@ const Component: React.FC = () => {
 
     axios({
       method: "POST",
-      url: "http://localhost:9001/api/blog/post/get",
+      url: "https://prabereg.ru/api/blog/post/get",
       data: { id }
     }).then((res) => {
       if (!res.data.data) document.location.href="/blog";
@@ -85,7 +85,7 @@ const Component: React.FC = () => {
 
     axios({
       method: "POST",
-      url: "http://localhost:9001/api/blog/post/edit",
+      url: "https://prabereg.ru/api/blog/post/edit",
       data: { ...input }
     }).then(() => {
       setState((s) => ({
