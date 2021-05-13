@@ -41,7 +41,7 @@ const Component: React.FC = () => {
         <div className="blog-posts-grid">
           {posts.map((post) => {
             return (
-              <div className="block-item" style={{ overflow: "hidden" }}>
+              <div key={post.id} className="block-item blog-post">
                 <div className="blog-post-title">{post.title}</div>
                 <div className="blog-post-content">{post.short_content.substring(0, 300)}...</div>
                 <div className="blog-post-btn"><Link  to={`/blog/post/${post.id}`} className="primary-btn">Читать дальше...</Link></div>
