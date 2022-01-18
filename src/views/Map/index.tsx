@@ -22,7 +22,7 @@ const Component: React.FunctionComponent = () => {
               <div className="contact-item"><i className="fas fa-phone"></i> +7 (902) 566-49-75</div>
               <div className="contact-item"><i className="fas fa-envelope"></i> <a href="mailto:prabereg@yandex.ru">prabereg@yandex.ru</a></div>
             </div>
-            <YandexMap address="Невский&nbsp;проспект,&nbsp;78,&nbsp;3&nbsp;этаж,&nbsp;офис&nbsp;8" coordinates={[59.932879, 30.348594]} />
+            <YandexMap address="Большой&nbsp;Смоленский&nbsp;проспект,&nbsp;2,&nbsp;оф.&nbsp;425,&nbsp;4&nbsp;этаж" coordinates={[59.901021, 30.423046]} />
           </div>
         </div>
       </div>
