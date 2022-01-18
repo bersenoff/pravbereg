@@ -25,7 +25,7 @@ const Component: React.FunctionComponent<IProps> = ({ coordinates, address }) =>
   }
 
   return (
-    <YMaps query={{ load: "package.full" }}>
+    <YMaps query={{ apikey: "7ef1fe1c-4e2f-4e24-ac3e-416891d87229", load: "package.full" }}>
       <Map 
         state={mapState}
         className="yandex_map"
